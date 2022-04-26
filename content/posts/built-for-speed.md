@@ -1,13 +1,12 @@
 ---
 title: The Core of the Simplex Method
-subtitle: The Geometrical Intuition Behind an Optimization Algorithm 
+subtitle: The Geometrical Intuition Behind an Optimization Algorithm
 category:
   - Mathematics
 author: El Ghemary Farah
 date: 2021-12-22T19:24:59.781Z
 featureImage: /uploads/1.jpg
 ---
-
 Throughout my personal experience, Operation Reasech was one of the easiest yet the most confusing courses that I took this year, and what I mean by easy, is that we were introduced to the field by memorizing some random calculations for every optimization technique! and yes it is terrible as it sounds, no one actually understood why we do all the long boring calculations, moreover the most important thing ! Why it works ? 
 
 In this article, I will share the summary of what I learned, and how I like to think about every single step on the algorithm.
@@ -53,7 +52,7 @@ Example :
 
 ![](https://latex.codecogs.com/svg.image?%7Bmax%7D%5C%20z%20=%20x_1%20&plus;%202x_2%20%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%7D%20s.t%5C%20%5C%20%5C%20%5C%20%20x_1%20&plus;%20x_3%20=%203,%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%7Dx_1%20&plus;%20x_2%20&plus;%20x_4%20=%205,%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%7Dx_1,x_2,%20x_3,%20x_4%20%5Cgeq%200)
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- - -
 
 **The graph**
 
@@ -73,7 +72,6 @@ but why does this work ?
 
 ![](https://upload.wikimedia.org/wikipedia/commons/d/d4/Simplex-method-3-dimensions.png)
 
-
 **An** **Overview of the Algorithm**
 
 1. Choose the initial vertex
@@ -88,7 +86,7 @@ Let's Apply this to the previous example of our LP
 
 1. Let's choose the origin as the initial vertex
 
-  ![](https://latex.codecogs.com/svg.image?x_1%20=%20x_2%20=%200) ![](https://latex.codecogs.com/svg.image?x_3&space;=&space;3,\&space;x_4&space;=&space;5\&space;and\&space;z&space;=&space;0)
+  ![](https://latex.codecogs.com/svg.image?x_1%20=%20x_2%20=%200) ![](https://latex.codecogs.com/svg.image?x_3&space;=&space;3,&space;x_4&space;=&space;5&space;and&space;z&space;=&space;0)
 
 2. Choose a neighbor :
 
@@ -103,11 +101,10 @@ Let's Apply this to the previous example of our LP
 4. (0,5) is our current vertex:
 
    ![](https://latex.codecogs.com/svg.image?x_3%20=%203%20-%20x_1%20=%203)
-   
-   ![](https://latex.codecogs.com/svg.image?x_4%20=%205%20-%20x_1%20-%20x_2%20=%205%20-%200%20-%205%20=%200)
-   
-   ![](https://latex.codecogs.com/svg.image?z%20=%2010)
 
+   ![](https://latex.codecogs.com/svg.image?x_4%20=%205%20-%20x_1%20-%20x_2%20=%205%20-%200%20-%205%20=%200)
+
+   ![](https://latex.codecogs.com/svg.image?z%20=%2010)
 5. Choose a neighbor:
 
    whatever vertex we choose from the neighbors, our f decreases, so that means the algorithm stops and (0,5) is our solution
@@ -164,14 +161,3 @@ Here is a python code that solve an LP problem using the simplex method
 ![](https://latex.codecogs.com/svg.latex?y%3Dx%5E2)
 $\alpha$
 \alpha
-- $\forall \, x \in (1,2)$
-
-## Lazy Loading Like Crazy
-
-In order to speed up both compile time and page load time, basically everything but the header, footer, hero, and main content of the posts are lazy loaded. All grids are lazy loaded with infinite scroll and all images (feature images and those in posts) are also lazy loaded. Comments can be lazy loaded or loaded on click of "Show Comments" button.
-
-## Pretty Stinkin' Fast, I'd Say
-
-I've taken a number of steps to try and make Awake as fast and snappy as possible for the end user and I think you'll find it's been handled fairly well. Last I ran one of the posts through Page Speed Insights I got a 99 score for desktop and 89 for mobile. [Give it a try for yourself!](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fawake-template.netlify.com%2Fpost-markup-and-formatting%2F&tab=desktop)
-
-![Page speed insights score 99!!](/uploads/page-speed-insights.jpg)
