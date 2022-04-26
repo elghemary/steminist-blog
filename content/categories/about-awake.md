@@ -1,5 +1,5 @@
 ---
-name: Art
+name: Artt
 image: /uploads/art.jpg
 description: my art
 ---
