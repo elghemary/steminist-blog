@@ -3,7 +3,7 @@
     <site-hero
       title="About Us"
       subtitle="Example About Page"
-      image="/uploads/about-hero.jpg"
+      image="/uploads/1.jpg"
     ></site-hero>
     <main-section theme="sidebar-right">
       <template v-slot:default>
